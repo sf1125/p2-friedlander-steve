@@ -1,0 +1,627 @@
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+	display: block;
+}
+
+ 
+************menu******************** 
+.nav ul {
+	margin: 0 0 0 0;
+	padding: 0 0 50px 0;
+	list-style-type: none;
+	float: right;
+	
+	
+
+}
+
+/* Style the menu link */
+.js .nav .skip {
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	background: #ffffff;
+	overflow: hidden;
+	width: 2.5em;
+	height: 2.5em;
+	text-align: center;
+	line-height: 2.5em;
+	font-family: canada-type-gibson, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	text-decoration: none;
+	color: #939393;
+	background-color: #ffff;
+	padding: 28px 25px 0 0;
+}
+
+/* Give the .nav ul a height when it's been opened, i.e. make it show */
+.js .nav ul.open {
+	max-height: 20em;
+	z-index: 999;
+	
+}
+
+/* Hide and position the closed .nav ul */
+.js .nav ul {
+	max-height: 0;
+	overflow: hidden;
+	position: absolute;
+	right: 1em;
+	top: 3.5em;
+	transition: max-height 0.25s ease-out;
+	
+}
+
+/* Style the list items to appear under the menu link */
+.js nav li {
+	text-align: center;
+	color: #939393;
+	
+
+}
+
+/* Style the list item links for ease of touch on small screens */
+.js nav li a {
+	padding: 0.5em;
+	display: block;
+	font-family: canada-type-gibson, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+	color: #ffff;
+	background-color: black;
+	text-decoration: none;
+	padding-top: 20px;
+
+}
+
+
+
+*************end************** 
+
+
+
+@import "bourbon";
+
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+.wrapper {
+  overflow-x: hidden;
+  min-height: 400px;
+  position: relative;
+  left: 0;
+}
+
+.toggle {
+  color: #333;
+  cursor: pointer;
+  font-size: 2em;
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.side-nav {
+  background-color: #f2294d;
+  color: #fff;
+  position: fixed;
+  top: 0;
+  left: -231px;
+  width: 210px;
+  height: 100%;
+  padding: 10px;
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    a {
+      padding: 10px 20px;
+      display: block;
+      color: rgba(255, 255, 255, 0.8);
+      text-decoration: none;
+      
+      &:hover {
+          color: rgba(255, 255, 255, 1);
+          font-weight: bold;
+      }
+    }
+  }
+}
+
+.nav-open {
+  Left: 230px;
+  
+  .side-nav {
+    left: 0;
+  }
+}
+
+.wrapper, .side-nav {
+  transition: right 0.5s ease;
+}
+
+// Demo Styles
+
+main p {
+  padding: 0 10px;
+  margin-top: 50px;
+}
+
+.opaque {
+  
+}
+
+*****END********
+
+
+.logo {
+	padding: 20px 0 0 20px;
+}
+
+h1 {
+	font-family: canada-type-gibson, sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	color: #4087ba
+}
+
+h2 {
+	font-family: canada-type-gibson, sans-serif;
+	font-weight: 600;
+	font-style: normal;
+}
+
+h3 {
+	font-size: 3rem;
+	padding-top: 35px;
+}
+
+p {
+	font-family: canada-type-gibson, sans-serif;
+	font-weight: 300;
+	font-style: normal;
+}
+
+img {
+	max-width: 100%;
+}
+
+.site {
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+
+}
+
+.site-content {
+	flex: 1;
+}
+
+header {
+	background-color: #ffffff;
+	padding-bottom: 20px;
+	border-bottom: 15px solid #a53036;	
+}
+
+.logo {
+	width: 175px;
+	padding: 14px 0 0 100px;
+}
+
+nav {
+	display: inline;
+	float: right;
+	padding: 40px 150px 0 0;
+}
+
+section.top-hero-image {
+    position: relative;
+}
+
+.landing img {
+    width: 100%;
+    max-height: 70vh;
+    object-fit: cover;
+	
+}
+
+.bottom-slogan {
+	color: #4087ba;
+	font-size: 6rem;
+	padding: 40px 0;
+	width: 100%;
+    max-height: 100vh;
+	text-align: center;
+}
+
+.tagline {
+	margin: 0 auto;
+	display: block;
+	font-size: 3rem;
+}
+
+footer {
+	margin-top: -10px;
+}
+
+figcaption {
+	padding: 1% 0% 5% 0;
+}
+
+.adopt-section {
+	max-width: 1200px;
+	margin: 0 auto;
+	display: block;
+}
+
+.adopt-section h1 {
+	padding: 40px 0 ;
+
+}
+
+.learn {
+	text-align: center;
+}
+
+.adopt-div {
+	width: 27%;
+	text-align: center;
+	padding: 2% 20px;
+}
+
+.div1,
+.div2,
+.div3 {
+	background-color: rgb(235, 230, 230);
+	padding: 0;
+}
+
+.adopt figure {
+	width: 100%;
+}
+
+#showquotes {
+	display: none;
+}
+
+#quotes {
+	text-decoration: none;
+	color: #a53036;
+	text-align: center;
+
+}
+
+.article {
+	padding-top: 50px;
+	font-size: 1.5rem;
+	margin: 0 auto;
+	display: block;
+}
+
+.learn {
+	text-align: center;
+
+
+}
+
+.popup {
+	display: none;
+	position: fixed;
+	padding: 10px;
+	width: 280px;
+	left: 50%;
+	margin-left: -150px;
+	height: 180px;
+	top: 50%;
+	margin-top: -100px;
+	background: #FFF;
+	border: 3px solid #a53036;
+	z-index: 20;
+}
+
+#popup:after {
+	position: fixed;
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: -2;
+}
+
+#popup:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #FFF;
+	z-index: -1;
+}
+
+/* Styling buttons & webpage */
+
+body {
+	background: offwhite;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+button {
+	margin-top: 50px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 3px solid #a53036;
+	color: #a53036;
+	font-size: 25px;
+	padding: 10px 20px;
+
+}
+
+button:hover {
+	background-color: #a53036;
+	color: #FFF;
+	border: 3px solid #a53036;
+	transition: all 0.3s ease 0s;
+}
+
+p {
+	margin: 1em 0;
+	font-size: 16px;
+}
+
+
+.popupk {
+	display: none;
+	position: fixed;
+	padding: 10px;
+	width: 280px;
+	left: 50%;
+	margin-left: -150px;
+	height: 180px;
+	top: 50%;
+	margin-top: -100px;
+	background: #FFF;
+	border: 3px solid #a53036;
+	z-index: 20;
+}
+
+#popupk:after {
+	position: fixed;
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.5);
+	z-index: -2;
+}
+
+#popupk:before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	background: #FFF;
+	z-index: -1;
+}
+
+/* Styling buttons & webpage */
+
+body {
+	background: offwhite;
+	font-family: Arial, sans-serif;
+	text-align: center;
+}
+
+button {
+	margin-top: 50px;
+	background-color: rgba(255, 255, 255, 0.3);
+	border: 3px solid #a53036;
+	color: #a53036;
+	font-size: 25px;
+	max-width: 175px;
+	margin: 25px auto 100px;
+	display: block;
+	padding: 10px 20px;
+
+}
+
+button:hover {
+	background-color: #a53036;
+	color: #FFF;
+	border: 3px solid #a53036;
+	transition: all 0.3s ease 0s;
+}
+
+p {
+	margin: 1em 0;
+	font-size: 16px;
+}
+
+********Contact************ .container {
+	max-width: 100%;
+}
+
+.contact-img {
+	flex: 100vh, 100vw;
+	margin: 0 auto;
+	display: block;
+	max-height: 100%;
+
+
+}
+
+.contact-steve {
+	padding: 50px 0px;
+	width: 630px;
+	margin: 0 auto;
+}
+
+.contact-steve p {
+	font-family: "Commissioner", sans-serif;
+
+}
+
+.contact-steve div {
+	margin-bottom: 10px;
+}
+
+.contact-form h3::first-line {
+	color: #a53036;
+}
+
+.contact-form p {
+	font-size: 1.5rem;
+}
+
+.label_input_wrap {
+	vertical-align: top;
+	display: block;
+}
+
+input,
+textarea {
+	display: flex;
+	border: 1px solid black;
+	padding: 10px 12px;
+	font-family: "Commissioner", sans-serif;
+}
+
+.submit input {
+	background: #a53036;
+	color: #fff;
+	font-size: 18px;
+	padding: 4px 35px;
+	border-radius: 3px;
+}
+
+footer ul li {
+	display: inline;
+}
+
+ul {
+	text-align: center;
+}
+
+.fa {
+	padding: 5px;
+	font-size: 50px;
+	width: 50px;
+
+	text-align: center;
+	text-decoration: none;
+	margin: 7px 4px;
+}
+
+.fa:hover {
+
+	color: #a53036;
+}
+
+.fa-facebook {
+	background: white;
+	color: black;
+}
+
+.fa-twitter {
+	background: white;
+	color: black;
+}
+
+.fa-instagram {
+	background: white;
+	color: black;
+}
+
+.name {
+	text-align: left;
+}
+
+.email {
+	text-align: left;
+}
+
+.message {
+	text-align: left;
+}
+
+
+
+@media (min-width: 1225px) {
+	.adopt-section {
+		display: flex;
+		flex-wrap: wrap;
+		width: 1200px;
+		padding-bottom: 25px;
+	}
+
+	.adopt-section h1 {
+		padding: 40px 0;
+	}
+
+	.adopt-div {
+		padding: 2% 20px;
+	}
+}
+
+.adopt-div h2 {
+	padding: 5% 0;
+}
+
+#map {
+	width: 50%;
+	height: 400px;
+	margin: 0 auto 50px;
+
+}
+
+
+
+/* On screens larger than 35em, remove the menu link and display all menu items */
+@media screen and (min-width: 220em) {
+	.js .nav ul {
+		overflow: auto;
+		max-height: inherit;
+		position: static;
+		display: flex;
+		justify-content: flex-start;
+		background-color: transparent;
+	}
+
+	.js .nav li {
+		text-align: left;
+		display: inline-block;
+		border-top: 0;
+		border-right: 1px solid #aaa;
+	}
+
+	.js .nav li:last-child {
+		border: 0;
+	}
+
+	.js .nav .skip {
+		display: none;
+		visibility: hidden;
+	}
+}

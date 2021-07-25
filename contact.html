@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+
+    <title>Contact Us</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link type="text/css" rel="stylesheet" href="styles.css" />
+    <script>
+        (function (H) {
+            H.className = H.className += "js"
+        })(document.documentElement)
+    </script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body class="site">
+
+    <div id="site-content">
+        <header>
+
+            <img class="logo" src="images/logo.png" alt="Gimme Shelter Pet Adoption Logo" />
+
+            <nav class="nav">
+                <a class="skip" href="#menu">Menu</a>
+                <ul id="menu">
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="adopt.html">adopt</a></li>
+                    <li><a href="contact.html">contact</a></li>
+                </ul>
+            </nav>
+
+
+        </header>
+
+        <main>
+            <section class="contact-img">
+                <img src="images/contact-pic.png" alt="Illustration of dogs with speech bubbles above them" title="Illustration of dogs with speech bubbles above them">
+            </section>
+
+            <div class="container">
+                <section class="contact-form">
+                    <h3>Have a question or comment?</h3>
+                    <p>We would love to hear from you!</p>
+                    <p>Send us a message and we will reply within one business day!</p>
+                    <form class="contact-steve" id="test_form" name="test_form" method="POST" action="form.php"
+                        onsubmit="return validateForm(this)">
+                        <div class="name">
+                            <label for="name" class="label_input_wrap">Name</label>
+                            <input type="text" name="req_name" placeholder="Your Name" id="name" />
+                        </div>
+
+
+                        <div class="email">
+                            <label for="email" class="label_input_wrap">Email</label>
+                            <input type="email" name="req_email" placeholder="Your Email" id="email" />
+                        </div>
+
+                        <div class="message">
+                            <label for="message" class="label_input_wrap">Message</label>
+                            <textarea name="message" maxlength="1000" cols="60" rows="10"
+                                placeholder="How Can We Help You?" id="message"></textarea>
+                        </div>
+
+                        <div class="submit">
+                            <input type="submit" value="Send">
+                        </div>
+                    </form>
+                </section>
+            </div>
+
+            <div id="map"></div>
+
+        </main>
+
+        <footer>
+            <ul>
+                <li><a href="https://www.facebook.com/" class="fa fa-facebook"></a></li>
+                <li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
+                <li><a href="https://www.twitter.com/" class="fa fa-twitter"></a></li>
+            </ul>
+        </footer>
+
+        <script src="main.js"></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAyo3A5qjkOJ4Qq7524Iktz-RsVX3zK6ZY&callback=initMap&libraries=&v=weekly"
+            async></script>
+</body>
+
+</html>
